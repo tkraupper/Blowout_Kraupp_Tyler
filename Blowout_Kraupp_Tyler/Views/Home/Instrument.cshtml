@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Instrument";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Instrument</h2>
+
+<img src="@ViewBag.Name" />
+<br />
+<br />
+<h3 class="lead" id="Price"></h3>
+<br />
+
+<div>
+    <p><a class="btn btn-primary btn-lg" onclick=@Html.ActionLink("Buy", "Contact", "Home")>Buy</a></p>
+    <!--<p><a class="btn btn-primary btn-lg" onclick="getElementById('Price').innerText = '@ViewBag.NewPrice'">New</a></p>
+
+    <p><a class="btn btn-primary btn-lg" onclick="getElementById('Price').innerText = '@ViewBag.UsedPrice'">Used</a></p>-->
+</div>
+
+<div>
+    <p>
+        Once the 18 months has been achieved you own the instrument! If you return the instrument after 3 months
+        and before 18 months you forfeit any equity in the instrument.
+    </p>
+    <p>*If you return it before 3 months there will is a $200 re-stocking fee.</p>
+</div>
+
+
